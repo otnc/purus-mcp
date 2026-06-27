@@ -91,7 +91,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     );
     const tmpFile = path.join(os.tmpdir(), `purus-run-${Date.now()}.js`);
     try {
-      const js = compile(code, { header: false });
+      const js = compile(code, { header: false, type: "commonjs" });
       fs.writeFileSync(tmpFile, js, "utf-8");
       const output = execFileSync(process.execPath, [tmpFile], {
         encoding: "utf-8",

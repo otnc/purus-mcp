@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "MCP server for the Purus programming language",
   "main": "dist/index.js",
-  "bin": { "purus-mcp": "dist/index.js" },
+  "bin": {
+    "purus-mcp": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
@@ -15,7 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.4.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
   }
 }
